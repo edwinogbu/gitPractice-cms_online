@@ -1,0 +1,386 @@
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ rm -r touch
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ ls
+css/  index.html/  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ rs -js
+bash: rs: command not found
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ mkdir js css
+mkdir: cannot create directory ‘js’: File exists
+mkdir: cannot create directory ‘css’: File exists
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ ls
+css/  index.html/  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ clear
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ cd ../..
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop
+$ cd gitPractice/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice
+$ cd cms/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ ls
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ mkdir css js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ ls
+css/  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ touch indx.html
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ ls
+css/  indx.html  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ cd css/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/css
+$ touch style.css bootstrap.css
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/css
+$ ls
+bootstrap.css  style.css
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/css
+$ cd ..
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ cd js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ touch script.js bootstrap.js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ ls
+bootstrap.js  script.js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ cd ..
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ cd js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ ls
+bootstrap.js  script.js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ ls
+bootstrap.js  script.js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js
+$ cd ..
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms
+$ git init
+Initialized empty Git repository in C:/Users/USER/Desktop/gitPractice/cms/.git/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        css/
+        indx.html
+        js/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git add .
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git commit -m 'new changes'
+[master (root-commit) 8ad091b] new changes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 css/bootstrap.css
+ create mode 100644 css/style.css
+ create mode 100644 indx.html
+ create mode 100644 js/bootstrap.js
+ create mode 100644 js/script.js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git log
+commit 8ad091bdaf71eaa5c9f591edd4a294e0d7e508f6 (HEAD -> master)
+Author: edwin <anointedboy4real80@gmail.com>
+Date:   Mon Feb 15 01:22:01 2021 -1100
+
+    new changes
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ ls
+css/  indx.html  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git branch edwin
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git checkout
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git checkout edwin
+Switched to branch 'edwin'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ touch register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ ls
+css/  indx.html  js/  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ cd ..
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice
+$ cd cms/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ git checkout master
+Switched to branch 'master'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ ls
+css/  indx.html  js/  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git checkout edwin
+Switched to branch 'edwin'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ git checkout master
+Switched to branch 'master'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ ls
+css/  indx.html  js/  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git checkout -b alabi
+Switched to a new branch 'alabi'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ touch payment.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ ls
+css/  indx.html  js/  payment.php  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git add .
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git commit -m 'new changes'
+[alabi 91f8375] new changes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 payment.php
+ create mode 100644 register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git status
+On branch alabi
+nothing to commit, working tree clean
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git branch
+* alabi
+  edwin
+  master
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git log
+commit 91f837513e72015c7431f99a7cc94ab811904694 (HEAD -> alabi)
+Author: edwin <anointedboy4real80@gmail.com>
+Date:   Mon Feb 15 01:37:12 2021 -1100
+
+    new changes
+
+commit 8ad091bdaf71eaa5c9f591edd4a294e0d7e508f6 (master, edwin)
+Author: edwin <anointedboy4real80@gmail.com>
+Date:   Mon Feb 15 01:22:01 2021 -1100
+
+    new changes
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git checkout master
+Switched to branch 'master'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git checkout -b favour
+Switched to a new branch 'favour'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (favour)
+$ ls
+css/  indx.html  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (favour)
+$ git checkout master
+Switched to branch 'master'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git branch -D favour
+Deleted branch favour (was 8ad091b).
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git branch
+  alabi
+  edwin
+* master
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git version
+git version 2.18.0.windows.1
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (master)
+$ git checkout alabi
+Switched to branch 'alabi'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ ls
+css/  indx.html  js/  payment.php  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git checkout edwin
+Switched to branch 'edwin'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ ls
+css/  indx.html  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ touch contact.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ ls
+contact.php  css/  indx.html  js/
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ git merge alabi
+Updating 8ad091b..91f8375
+Fast-forward
+ payment.php  | 0
+ register.php | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 payment.php
+ create mode 100644 register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ ls
+contact.php  css/  indx.html  js/  payment.php  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ git checkout alabi
+Switched to branch 'alabi'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ ls
+contact.php  css/  indx.html  js/  payment.php  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (alabi)
+$ git checkout edwin
+Switched to branch 'edwin'
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ ls
+contact.php  css/  indx.html  js/  payment.php  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ sublime .
+bash: sublime: command not found
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ start Sublim Text
+The system cannot find the file Sublim.
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ code .
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ ls
+contact.php  css/  indx.html  js/  payment.php  register.php
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ cd js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ code .
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ git add .
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ git commit -m 'created a js file'
+[edwin 669cf5f] created a js file
+ 1 file changed, 4 insertions(+)
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ git log
+commit 669cf5f8a404d79aefc949795584092baa66eb8c (HEAD -> edwin)
+Author: edwin <anointedboy4real80@gmail.com>
+Date:   Mon Feb 15 02:16:05 2021 -1100
+
+    created a js file
+
+commit 91f837513e72015c7431f99a7cc94ab811904694 (alabi)
+Author: edwin <anointedboy4real80@gmail.com>
+Date:   Mon Feb 15 01:37:12 2021 -1100
+
+    new changes
+
+commit 8ad091bdaf71eaa5c9f591edd4a294e0d7e508f6 (master)
+Author: edwin <anointedboy4real80@gmail.com>
+Date:   Mon Feb 15 01:22:01 2021 -1100
+
+    new changes
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ cd ..
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms (edwin)
+$ cd js
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ gitignor
+bash: gitignor: command not found
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ touch .gitignor
+
+USER@DESKTOP-EB9N2UD MINGW64 ~/Desktop/gitPractice/cms/js (edwin)
+$ git checkout maste
